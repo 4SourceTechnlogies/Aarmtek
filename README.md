@@ -1,4 +1,5 @@
 # Aarmtek
 
-## Front-End Developer : Gaurav Jha
-                        ### github: grvx-github
+## Contributors:
+### Front-End Developer : Gaurav Jha
+ > github: grvx-github
