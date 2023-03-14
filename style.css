@@ -56,12 +56,12 @@ img{
     .heroSection{
     background: url(images/bannerBG.png);
     background-size: cover;
-    min-height: 99vh;
     padding: 1rem 2rem;
     transition: 0.25s ease;
     }
     .heroSection.togglerClicked{
         background: url(images/togglerClickedBg.png)!important;
+        min-height: 99vh;
     }
     .heroSection .navbar{
         padding-inline: 4rem;
@@ -89,7 +89,7 @@ img{
     .heroSection .navbar-collapse{
         position: absolute;
         top: 6rem;
-        left: -20rem;
+        left: -17rem;
     }
     .navbar-collapse ol{
         list-style: auto;
@@ -558,7 +558,7 @@ img{
     @media screen and (max-width: 991px) {
         .menu {
             font-size: 4rem;
-            left: 0;
+            left: 20%;
         }
         .heroSection .navbar {
             margin: 0;
@@ -683,4 +683,12 @@ img{
     .videoAdvert{
         text-align: center;
         
+    }
+    @media screen and (max-width: 767px) {
+        video {
+            width: 90%;
+        }
+        .advertSection{
+            width: 100%;
+        }
     }

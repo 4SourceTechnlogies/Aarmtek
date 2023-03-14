@@ -23,18 +23,4 @@ toggler.addEventListener('click', function(){
     else {
         banText.innerHTML = untoggledBanner;
     }
-})
-
-// var unToggledBanner = `<div class="headingText">
-//                 <h3>We find you jobs <br>
-//                     <span>at great companies</span>
-//                 </h3>
-//             </div>
-//             <div class="quoteBtn">
-//                 <a href="">
-//                     <button class="btn1">
-//                         <img src="images/mailImg.png" alt="">
-//                         <p>Get a quote</p>
-//                     </button>
-//                 </a>
-//             </div>`
+});
