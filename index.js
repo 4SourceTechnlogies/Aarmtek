@@ -24,3 +24,11 @@ toggler.addEventListener('click', function(){
         banText.innerHTML = untoggledBanner;
     }
 });
+
+$(document).ready(function () {
+  $(".footerUpper .carousel").carousel({
+    interval: 3000,
+  });
+
+  $(".footerUpper .carousel").carousel("cycle");
+});
