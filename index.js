@@ -25,10 +25,14 @@ toggler.addEventListener('click', function(){
     }
 });
 
-$(document).ready(function () {
-  $(".footerUpper .carousel").carousel({
-    interval: 3000,
-  });
+var cylceCarousel = [$(".footerUpperCarousel"), $(".videoCarousel")];
 
-  $(".footerUpper .carousel").carousel("cycle");
+$(document).ready(function () {
+  cylceCarousel.forEach((cycle) => {
+    cycle.carousel({
+      interval: 3000,
+    });
+
+    cycle.carousel("cycle");
+  });
 });
