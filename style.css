@@ -640,7 +640,8 @@ img{
     }
 /* Responsiveness */
 
-    .aboutBody .heroSection{
+/* About Page */
+    .innerBody .heroSection{
         background: url(images/aboutBG.png);
     }
     .aboutBody .aboutLeft{
@@ -692,3 +693,92 @@ img{
             width: 100%;
         }
     }
+/* About Page */
+
+/* Contact Page */
+    .contactMainWrapper{
+        padding: 4rem;
+    }
+    .contactMainWrapper .card{
+        border-radius: 0;
+        height: 24.7rem;
+        align-items: center;
+        padding: 2rem;
+        color:white;
+        z-index: 3;
+        position: relative;
+        cursor: pointer;
+        padding-top: 15%;
+    }
+    .card h3, .card-body{
+        z-index: 3;
+        position: relative;
+    }
+    .contactMainWrapper .card ul{
+        list-style: none;
+        padding: 0;
+    }
+    .uk{
+        background: url(images/uk.png);
+    }
+    .dubai{
+        background-image: url(images/dbai.png);
+    }
+    .india{
+        background-image: url(images/india.png);
+    }
+    .uk,
+    .dubai,
+    .india {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .contactMainWrapper .card-body{
+        margin-top: 0.5rem;
+    }
+    .contactMainWrapper .card-body ul li{
+        display: flex;
+        gap: 1rem;
+        padding-block: 0.5rem;
+        align-items: baseline;
+    }
+    .contactMainWrapper .card::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--color-primary);
+        opacity: 0;
+        z-index: 1;
+        transition: 0.25s ease;
+    }
+    .card:hover::after{
+        opacity: 0.75;
+        transition: 0.25s ease;
+    }
+    .contactBody .form{
+        flex: 1 0 45%;
+    }
+    iframe{
+       max-width: 100%;
+    }
+
+    @media only screen and (max-width: 991px) {
+        .contactMainWrapper .row{
+            gap: 1rem;
+        }
+        .contactMainWrapper .card-body{
+            margin-top: -1rem;
+        }
+        .contactMainWrapper .card{
+            max-height: min-content;
+            border: none;
+        }
+    }
+    @media screen and (max-width: 399px) {
+        .contactMainWrapper{
+            padding-inline: 1.75rem;
+        }
+    }
+/* Contact Page */
