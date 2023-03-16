@@ -36,3 +36,19 @@ $(document).ready(function () {
     cycle.carousel("cycle");
   });
 });
+
+
+var tabs = [$('.tabImg')];
+
+tabs.forEach((tab)=>{
+  $(tab).click(function(){
+    if ($(this).hasClass("active")) {
+      return;
+    } else {
+        for (i = 0; i <= tab.length; i++) {
+          tab.removeClass('active');
+          $(this).addClass('active');
+        }
+    }    
+  })
+})

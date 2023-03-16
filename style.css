@@ -934,7 +934,7 @@ iframe {
 
 /* Contact Page */
 
-/* Services Page */
+/* markteing Page */
     .secondFold{
         padding: 2rem 4rem;
         width: 70%;
@@ -1052,4 +1052,98 @@ iframe {
     }
     .innerBody .contactWrapper>.topBar{
         background-color: transparent;
+    }
+
+    @media screen and (max-width: 991px) {
+        .marketingBody .secondFold{
+            width: 100%;
+            align-items: center;
+        }
+        .bi,.br, .bb{
+            border:none;
+        }
+        .mbb{
+            border-bottom: 1px solid white;
+        }
+        .mbl{
+            border-left: 0.5px solid white;
+        }
+        .mbr{
+            border-radius: 0.5px solid white;
+        }
+    }
+    @media screen and (max-width:767px) {
+        .mbl, .mbr{
+            border: none;
+        }
+        .mbb{
+            border-bottom: 1px solid white;
+        }
+        .marketingRow>div:nth-child(7){
+            border-bottom: 1px solid white;
+        }
+        .marketingBody .secondFold{
+            flex-direction: column;
+            padding: 2rem;
+        }
+        .tabContentWrapper{
+            flex-direction: column;
+        }
+        .thirdFoldWrapper{
+            width: 100%;
+            padding: 2rem;
+        }
+        .tabRight{
+            padding: 0;
+        }
+    }
+/* markteting page */
+/* Work Page */
+    .workMainWrapper{
+        padding: 2rem 4rem;
+    }
+    .tabPaneWrapper{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+    }
+    .tabImg .tabImgOverlay{
+        display: none;
+    }
+    .tabImg.active{
+        grid-row: 1/3;
+        grid-column: 1/3;
+        position: relative;
+    }
+    .tabImg.active>img{
+        object-fit: cover;
+    }
+    .tabImg.active .tabImgOverlay{
+        display: block;
+    }
+    .nav-tabs{
+        justify-content: space-between;
+    }
+    .workMainWrapper .nav-link{
+        color: #000;
+        border: none;
+        font-size: 0.9rem;
+    }
+    .workMainWrapper .nav-link.active{
+        color: var(--color-primary);
+        border: none;
+    }
+    @media screen and (max-width:767px) {
+        .tabPaneWrapper{
+            grid-template-columns: 1fr;
+        }
+        .tabImg.active{
+            grid-column: inherit;
+        }
+        .workMainWrapper{
+            padding-inline: 1rem;
+        }
+        .nav-tabs{
+            justify-content: flex-start;
+        }
     }
