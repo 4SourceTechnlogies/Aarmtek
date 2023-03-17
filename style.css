@@ -1055,7 +1055,7 @@ iframe {
     }
 
     @media screen and (max-width: 991px) {
-        .marketingBody .secondFold{
+        .secondFold{
             width: 100%;
             align-items: center;
         }
@@ -1082,7 +1082,7 @@ iframe {
         .marketingRow>div:nth-child(7){
             border-bottom: 1px solid white;
         }
-        .marketingBody .secondFold{
+        .secondFold{
             flex-direction: column;
             padding: 2rem;
         }
@@ -1098,6 +1098,7 @@ iframe {
         }
     }
 /* markteting page */
+
 /* Work Page */
     .workMainWrapper{
         padding: 2rem 4rem;
@@ -1148,3 +1149,70 @@ iframe {
         }
     }
 /* Work */
+
+/* Services Page */
+    .tableSection{
+        padding: 2rem 4rem;
+    }
+    .table, .tableTwo{
+        width: 70%;
+        margin-inline: auto;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    .tableSection td{
+        padding: 0.5rem 1.5rem;
+    }
+    thead{
+        background-color: var(--color-primary); 
+    }
+    .tableSection>table th{
+        padding:  1rem;
+        color: white;
+    }
+    table th p, .theadWrapper p{
+        font-family: quantify !important;
+        font-weight: 400;
+        font-size: 1.25rem;
+        color: white!important;
+    }
+    .tableSection td span, .tbody p span{
+        margin-right: 0.5rem;
+        font-weight: 800;
+        font-size: 1.2rem;
+        color: var(--color-primary);
+    }
+    .theadWrapper{
+        background-color: var(--color-primary);
+        display: flex;
+        padding: 0.5rem 1rem ;
+        justify-content: space-between;
+    }
+    .tbody p{
+        padding: 0.5rem;
+    }
+    .tbody .row{
+        --bs-gutter-x: 0;
+    }
+    .tbody .row .col-lg-6>div{
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .tbody{
+        padding: 1rem 2rem;
+    }
+    @media screen and (max-width: 991px) {
+        .table, .tableTwo{
+            width: 90%;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .tableSection{
+            padding: 2rem 1rem;
+        }
+        .table, .tableTwo{
+            width: 100%;
+        }
+        .tableSection td{
+            width: 100%;
+            float: left;
+        }
+    }

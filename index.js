@@ -37,7 +37,6 @@ $(document).ready(function () {
   });
 });
 
-
 var tabs = [$('.tabImg')];
 
 tabs.forEach((tab)=>{
