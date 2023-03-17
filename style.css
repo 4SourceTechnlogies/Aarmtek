@@ -1137,6 +1137,10 @@ img {
         }
         .tableTwoVM{
             display: block;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .tableTwoVM>.tbody, .thead{
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         }
     }
 /* Services page */
