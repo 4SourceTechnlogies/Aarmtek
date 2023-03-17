@@ -848,7 +848,7 @@ img {
     }
 /* Contact Page */
 
-/* markteing Page */
+/* Markteing Page */
     .secondFold{
         padding: 2rem 4rem;
         width: 70%;
@@ -1011,7 +1011,7 @@ img {
             padding: 0;
         }
     }
-/* markteting page */
+/* Markteting page */
 
 /* Work Page */
     .workMainWrapper{
@@ -1113,6 +1113,9 @@ img {
     .tbody{
         padding: 1rem 2rem;
     }
+    .tableTwoVM{
+        display: none;
+    }
     @media screen and (max-width: 991px) {
         .table, .tableTwo{
             width: 90%;
@@ -1128,6 +1131,12 @@ img {
         .tableSection td{
             width: 100%;
             float: left;
+        }
+        .tableTwo{
+            display: none;
+        }
+        .tableTwoVM{
+            display: block;
         }
     }
 /* Services page */
