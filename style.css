@@ -145,7 +145,8 @@ img {
         font-weight: 900;
         color: #010101;
         position: relative;
-        left: -20%;
+        left: 12.5%;
+        width: max-content;
     }
 /* Hero Section */
 
